@@ -1,0 +1,10 @@
+#!/bin/bash
+export HOSTNAME=boxit-$(basename $(realpath $1))
+export CODE_DIR=$(realpath $1)/Code
+
+echo Running boxit
+echo hostname: $HOSTNAME
+echo code dir: $CODE_DIR
+echo enjoy boxit and please donate. 
+
+docker run -it --hostname $HOSTNAME --mount src="$CODE_DIR",target=/home/devuser/Code,type=bind isamuelson/boxit:latest
