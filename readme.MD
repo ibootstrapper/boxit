@@ -28,5 +28,5 @@ $ sudo cp ./boxit /usr/local/bin && sudo chmod +x /usr/local/bin/boxit
 
 ## requires
 - Docker command line
-- reference to where a `Code` directory can be found
+- reference to where a `./Code` directory can be found
 
